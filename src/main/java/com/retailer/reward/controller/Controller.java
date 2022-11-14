@@ -10,10 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.ValidationException;
@@ -28,7 +25,7 @@ public class Controller {
     private final TransactionServiceI transactionServiceI;
     private final RewardServiceI rewardServiceI;
 
-    @PostMapping("/reward")
+    @GetMapping("/reward")
     public ResponseEntity<?> getRewards(@RequestBody GetCustomerRewardParam param){
         return new ResponseEntity<>(rewardServiceI.getRewards(param),HttpStatus.OK);
     }
