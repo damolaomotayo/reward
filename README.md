@@ -60,8 +60,8 @@ Retailer reward App
 - path: /transaction
 - method: POST
 - request payload:{
-  "CustomerIdentifier":1,
-  "stockIdentifier":1,
-  "quantity":1
+  "CustomerIdentifier":10001,
+  "stockIdentifier":10002,
+  "quantity":4
   }
 - response status: 201
