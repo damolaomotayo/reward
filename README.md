@@ -6,6 +6,8 @@ Retailer reward App
 - Spring boot version 2.7.5
 - Lombok
 - H2 database (in-memory)
+- JUnit 5
+- Mockito
 
 #REST base URl 
 - http://localhost:8080/api
